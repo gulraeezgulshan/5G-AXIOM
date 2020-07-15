@@ -1,0 +1,29 @@
+type: seq
+sequence:
+  -
+    type: map
+    mapping:
+     "name":
+        type: str
+        required: yes
+     "email":
+        type: str
+        required: yes
+     "password":
+        type: str
+        range:
+          min: 8
+          max: 16  
+     "age":
+        type: int
+        range: { min: 18, max: 30} 
+     "blood":
+        type: str
+        enum: [A, B, O, AB]
+     "birth":
+        type: date
+     "memo":
+        type: any
+     "deleted":
+        type: bool
+        default: false

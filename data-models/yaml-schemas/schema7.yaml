@@ -1,0 +1,11 @@
+# Schema
+type: seq
+matching: "any"
+sequence:
+  - type: str
+  - type: seq
+    sequence:
+      - type: int
+  - type: seq
+    sequence:
+      - type: str

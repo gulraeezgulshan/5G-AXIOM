@@ -1,0 +1,5 @@
+unicode: "Sosa did fine.\u263A"
+
+single: '"Howdy!" he cried.'
+quoted: ' # not a ''comment''.'
+tie-fighter: '|\-*-/|'

@@ -1,0 +1,6 @@
+# Schema
+type: map
+mapping:
+  email:
+    type: str
+    pattern: .+@.+
