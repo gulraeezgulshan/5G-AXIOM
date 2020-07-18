@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<country name="Afghanistan">
+<country name="Afghanistan" region="asia" >
   <population>32225560</population>
   <area>652000</area>
   <capital>Kabul</capital>

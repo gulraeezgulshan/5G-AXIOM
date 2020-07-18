@@ -9,6 +9,7 @@
       <xs:element name="capital" type="xs:string"/>
     </xs:sequence>
     <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="region" type="xs:string"/>
   </xs:complexType>
 </xs:element>
 
