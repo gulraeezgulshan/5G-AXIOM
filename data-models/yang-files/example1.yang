@@ -1,0 +1,26 @@
+module example1 {
+    namespace "http://acme.example.com/system";
+    prefix "acme";
+
+    organization "ACME Inc.";
+    contact "joe@acme.example.com";
+    description
+        "The module for entities implementing the ACME system.";
+
+    revision 2007-11-05 {
+        description "Initial revision.";
+    }
+
+    container vlans {
+        list vlan {
+            key "id";
+            leaf id {
+                type int;
+                range 1..4094;
+            }
+            leaf name {
+                type string;
+            }
+        }
+    }
+}
