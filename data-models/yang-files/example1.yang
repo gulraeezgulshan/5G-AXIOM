@@ -1,26 +1,23 @@
 module example1 {
-    namespace "http://acme.example.com/system";
-    prefix "acme";
+    namespace "http://axiom.com.pk/axiom";
+    prefix "axiom";
 
-    organization "ACME Inc.";
-    contact "joe@acme.example.com";
+    organization "AXIOM";
+    contact "info@axiom.com.pk";
     description
-        "The module for entities implementing the ACME system.";
+        "The module for entities implementing the AXIOM system.";
 
-    revision 2007-11-05 {
+    revision 2020-07-22 {
         description "Initial revision.";
     }
 
-    container vlans {
-        list vlan {
-            key "id";
-            leaf id {
-                type int;
-                range 1..4094;
+    container system {
+        leaf hostname {
+            type string;
+            mandatory true;
+            config true;
+            description "Hostname for the network device";
             }
-            leaf name {
-                type string;
-            }
-        }
     }
+       
 }
