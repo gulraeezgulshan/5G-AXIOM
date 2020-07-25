@@ -1,0 +1,8 @@
+{% for i in interface %}
+ interface {{ i }}
+ {% if i == "GigabitEthernet0/1" %}
+    switchport mode trunk
+ {% else %}
+    switchport mode access
+ {% endif %} 
+{% endfor %}

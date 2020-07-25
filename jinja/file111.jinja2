@@ -1,0 +1,6 @@
+{% for item in interface %}
+ interface {{ item.name | upper | reverse }}
+  description {{item.desc}}
+  switchport mode {{item.mode}}
+  switchport access vlan {{item.vlan}}
+{% endfor %}

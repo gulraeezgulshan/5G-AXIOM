@@ -1,0 +1,11 @@
+{% for n in range(10) %}
+interface GigabitEthernet0/{{ n+1 }}
+    description {{interface.desc}}
+    {% if n+1 == 3 %}
+    switchport mode trunk
+    {% else %}
+    switchport mode access
+    switchport access vlan {{interface.vlan}}
+    {% endif %}
+    switchport access vlan {{interface.number}}
+{% endfor %}
