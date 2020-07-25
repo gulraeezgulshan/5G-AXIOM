@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <ul>{% for city, items in users|groupby("city") %}
+        <li>{{ city }}
+            <ul>{% for user in items %}
+                <li>{{ user.name }}</li>
+            {% endfor %}</ul>
+        </li>
+    {% endfor %}</ul>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    {% raw %}
+    <ul>
+    {% for item in seq %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+    {% endraw %}
+  
+    <ul>
+    {% for item in seq %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

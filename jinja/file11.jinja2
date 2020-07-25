@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+   <ul>
+   {% for user in users %}
+    {%- if loop.index >= 3 %}{% break %}{% endif %}
+        <li>{{ user.username }}</li>
+    {%- endfor %}
+</ul>
+</body>
+</html>
